@@ -8,7 +8,6 @@ services:
       - .env
     volumes:
       - ./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
-      - ./purge_cache.sh:/usr/local/bin/purge_cache.sh
 
   app:
     build:
